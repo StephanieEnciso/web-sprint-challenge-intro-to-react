@@ -38,9 +38,6 @@ const App = () => {
   );
 }
 
-const StyledH1 = styled.h1`
-  
-`;
 const StyledDiv = styled.div`
 
   h1{
@@ -55,7 +52,6 @@ const StyledDiv = styled.div`
     padding-bottom: 3%;
   }
   
-
   .img-container {
     background-color: darkslateblue;
     padding-right: 3%;
