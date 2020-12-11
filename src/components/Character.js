@@ -6,12 +6,12 @@ import React from 'react';
 export default function Character(props){
     const {info} = props
     return (
-        <div>
+        <div className = 'character-div'>
             <div className='img-container'>
                 <img src = {info.image} alt = {info.name}/> 
-                <h4>{info.name}</h4>
+                <h3>{info.name}</h3>
             </div>
-            <div>
+            <div className = 'info'>
                     <p>Gender: {info.gender} </p>
                     <p>Species: {info.species} </p>
                     <p>Status: {info.status} </p>

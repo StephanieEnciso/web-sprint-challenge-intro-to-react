@@ -28,29 +28,65 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
+    <StyledDiv className="App">
       <StyledH1 className="Header">Rick and Morty Characters</StyledH1>
       {characters.map((character) =>{
-        return (
-          <StyledCharacterDiv>
-            <Character key = {character.id} info = {character} />
-          </StyledCharacterDiv>)
+        return <Character key = {character.id} info = {character} />
+          
       })}
-    </div>
+    </StyledDiv> 
   );
 }
 
 const StyledH1 = styled.h1`
-  color: #a0e9f2;
-  text-shadow: 3px 3px darkslateblue;
+  
 `;
-const StyledCharacterDiv = styled.div`
-  border: 4px solid black;
-  width: 70%;
+const StyledDiv = styled.div`
+
+  h1{
+    color: #a0e9f2;
+    text-shadow: 3px 3px darkslateblue;
+    font-size: 4rem;
+  }
+  .character-div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-bottom: 3%;
+  }
+  
+
+  .img-container {
+    background-color: darkslateblue;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 3%;
+  }
 
   img {
-    width: 20vw;
-    height: 32vh;
+    width: 28vw;
+    height: 40vh;
+  }
+
+  h3 {
+   
+    color: #a0e9f2;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5%;
+    padding-left: 10%;
+  }
+
+  p {
+    color: darkslateblue;
+    font-size: 1.2rem;
+    font-weight: bold;
   }
 `;
 
