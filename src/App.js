@@ -29,7 +29,7 @@ const App = () => {
 
   return (
     <StyledDiv className="App">
-      <StyledH1 className="Header">Rick and Morty Characters</StyledH1>
+      <h1 className="Header">Rick and Morty Characters</h1>
       {characters.map((character) =>{
         return <Character key = {character.id} info = {character} />
           
@@ -51,7 +51,7 @@ const StyledDiv = styled.div`
     flex-direction: row;
     padding-bottom: 3%;
   }
-  
+
   .img-container {
     background-color: darkslateblue;
     padding-right: 3%;
